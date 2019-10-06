@@ -4,8 +4,10 @@ import sys
 # さいころの和を計算する用の関数
 from func import  diceroll
 
+# 自分のBotのアクセストークンに置き換えてください
 TOKEN = 'NjMwMTY5MzUyNjQwOTIxNjQw.XZkZpA.3NWnsJ8MyF4V8hdcx61xspafI60'
 
+# 接続に必要なオブジェクトを生成
 client = discord.Client()
 
 @client.event
@@ -36,4 +38,5 @@ async def on_message(message):
         # さいころの目の総和の内訳を表示する
         await message.channel.send(dice)
 
-client.run(NjMwMTY5MzUyNjQwOTIxNjQw.XZkZpA.3NWnsJ8MyF4V8hdcx61xspafI60)
+# Botの起動とDiscordサーバーへの接続
+client.run('NjMwMTY5MzUyNjQwOTIxNjQw.XZkZpA.3NWnsJ8MyF4V8hdcx61xspafI60')
