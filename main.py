@@ -18,7 +18,7 @@ async def on_ready():
     print(client.user.id)
     print('--------------')
     channel = client.get_channel('チャンネルID')
-    await channel.send('楽しいTRPGを始めましょう！')
+    await channel.send('ダイスを振ります！')
 
 @client.event
 async def on_message(message):
